@@ -14,16 +14,32 @@
             background: url(prova.jpg);
             background-size: cover;
         }
+
+                /* Stile iniziale del testo nascosto */
+                #testo {
+            display: none;
+        }
+
+        /* Stile del testo quando il mouse è sopra l'elemento */
+        #elemento:hover #testo {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <h1>Ciao Mamma</h1>
     <div class="prova"></div>
+    <i>Info</i>
     
     <button onclick="toggleDiv()">Apri/Chiudi Div</button>
     <div id="myDiv" style="display: none;">
         <div class="prova"></div>
         <!-- Questo è il mio div che può essere aperto e chiuso. -->
+    </div>
+
+    <div id="elemento">Passa il mouse qui
+        <!-- Elemento dove verrà mostrato il testo -->
+        <div id="testo">Testo visualizzato al passaggio del mouse</div>
     </div>
 
     <script src="script.js"></script>
