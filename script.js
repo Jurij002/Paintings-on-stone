@@ -41,3 +41,15 @@ window.onscroll = function() {
       behavior: 'smooth'
     });
   }
+
+
+
+  function toggleInfo() {
+    var infoContainer = document.getElementById('infoContainer');
+
+    if (infoContainer.style.maxHeight === '0px' || infoContainer.style.maxHeight === '') {
+      infoContainer.style.maxHeight = infoContainer.scrollHeight + 'px';
+    } else {
+      infoContainer.style.maxHeight = '0';
+    }
+  }
