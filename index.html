@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it-IT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="bg-dark text-white text-center py-3">
@@ -16,7 +18,7 @@
     <!-- <h1>Ciao Mamma</h1>
     <div class="prova"></div> -->
 
-    
+
 
 
 
@@ -75,49 +77,80 @@
 
 
 
+    <!-- Container Di Tutti I Contenitori Dei Quadri -->
 
     <div class="container mt-4">
         <div class="row gufoBiancoSfondoNero">
-                <h1 class="text-center">Gufo</h1>
+            <h1 class="text-center">Gufo</h1>
             <div class="col-md-4 mb-4">
                 <a href="GufoNeroBiancoSfondoBianco.jpg">
                     <img src="GufoNeroBiancoSfondoBianco.jpg" alt="Immagine 2" class="img-fluid">
                 </a>
             </div>
-            
+
             <div class="col-md-4 mb-4">
                 <a href="GufoNeroBiancoSfondoNero.jpg">
                     <img src="GufoNeroBiancoSfondoNero.jpg" alt="Immagine 1" class="img-fluid">
                 </a>
             </div>
 
-          <div class="col-md-4 mb-4">
-            <a href="GufoNeroBiancoDiLato.jpg" target="_blank">
-                <img src="GufoNeroBiancoDiLato.jpg" alt="Immagine 3" class="img-fluid">
-            </a>
-          </div> 
-          <h6 class="card-subtitle mb-2 text-muted">Prezzo: €19.99</h6>    
+            <div class="col-md-4 mb-4">
+                <a href="GufoNeroBiancoDiLato.jpg" target="_blank">
+                    <img src="GufoNeroBiancoDiLato.jpg" alt="Immagine 3" class="img-fluid">
+                </a>
+            </div>
+            <h6 class="card-subtitle mb-2 text-muted">Prezzo: €19.99</h6>
         </div>
-      
+
         <div class="row pt-4">
-          <div class="col-md-3 mb-4">
-            <img src="PallinaNataleArancione.jpg" alt="Immagine 4" class="img-fluid">
-          </div>
-          <div class="col-md-3 mb-4">
-              <img src="PallinaNataleGiallo.jpg" alt="Immagine 6" class="img-fluid">
+            <div class="col-md-3 mb-4">
+                <img src="PallinaNataleArancione.jpg" alt="Immagine 4" class="img-fluid">
+            </div>
+            <div class="col-md-3 mb-4">
+                <img src="PallinaNataleGiallo.jpg" alt="Immagine 6" class="img-fluid">
             </div>
             <div class="col-md-3 mb-4">
                 <img src="PallinaNataleVerde.jpg" alt="Immagine 6" class="img-fluid">
             </div>
             <div class="col-md-3 mb-4">
-              <img src="PallinaNataleBlu.jpg" alt="Immagine 5" class="img-fluid">
+                <img src="PallinaNataleBlu.jpg" alt="Immagine 5" class="img-fluid">
             </div>
-          <div class="price card"><span>Prezzo: €19.99</span></div>
+            <div class="price card"><span>Prezzo: €19.99</span></div>
         </div>
-      </div>
+    </div>
 
 
 
+
+    <!-- Contattaci -->
+    <div id="form-container">
+        <h2 class="text-center mb-4">Contattaci</h2>
+        <div class="container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Il tuo nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Messaggio:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Il tuo messaggio"
+                        required></textarea>
+                </div>
+
+                <button type="button" class="btn btn-success btn-block" onclick="submitForm()">Invia</button>
+            </form>
+        </div>
+
+        <p id="successMessage" class="error text-center mt-3" style="display: none;">Il messaggio è stato inviato con
+            successo!</p>
+    </div>
 
 
     <!-- <footer class="footer">
@@ -130,10 +163,11 @@
 
 
     <script src="script.js"></script>
-<!-- Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 </body>
+
 </html>

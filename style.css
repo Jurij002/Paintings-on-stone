@@ -5,9 +5,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
+}
 
-.prova{
+.prova {
     height: 600px;
     width: 400px;
     background: url(prova.jpg);
@@ -16,15 +16,19 @@ body {
 
 
 
-  #footer {
+#footer {
     background-color: #574240;
     color: #fff;
     text-align: center;
     padding: 20px;
-  }
+}
 
-  .gufoBiancoSfondoNero{
+.gufoBiancoSfondoNero {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-  }
+}
+
+#form-container {
+    background-color: #856866;
+}
