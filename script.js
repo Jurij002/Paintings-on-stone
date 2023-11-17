@@ -24,3 +24,20 @@ function submitForm() {
 
   // Puoi aggiungere qui la logica per inviare i dati a un server tramite AJAX o altre tecniche.
 }
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById('scrollToTopBtn').style.display = 'block';
+    } else {
+      document.getElementById('scrollToTopBtn').style.display = 'none';
+    }
+  };
+
+  // Funzione per tornare su della pagina con uno smooth scroll
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
